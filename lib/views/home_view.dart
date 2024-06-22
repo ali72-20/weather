@@ -10,7 +10,8 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Weather App'),
+        backgroundColor: Colors.blue,
+        title: const Text('Weather App', style: TextStyle(color: Colors.white),),
       ),
       body: const NoWeatherBody(),
     );

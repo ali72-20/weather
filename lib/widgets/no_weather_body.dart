@@ -9,7 +9,7 @@ class NoWeatherBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -17,9 +17,10 @@ class NoWeatherBody extends StatelessWidget {
             const Text(
               'there is no weather 😔 start',
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 24,
               ),
             ),
+            SizedBox(height: 15,),
             TextButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (_)=> const search()));
