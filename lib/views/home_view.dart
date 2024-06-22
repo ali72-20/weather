@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:weather/Components%20/App_bar_tile.dart';
 import '../widgets/no_weather_body.dart';
-
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -11,7 +10,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: const Text('Weather App', style: TextStyle(color: Colors.white),),
+        title:  const AppBarTile()
       ),
       body: const NoWeatherBody(),
     );
