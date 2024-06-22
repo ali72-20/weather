@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 
 class search extends StatefulWidget {
   const search({super.key});
@@ -28,10 +29,8 @@ class _searchState extends State<search> {
         child: Center(
           child: TextField(
             decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius:BorderRadius.all(Radius.circular(12),),
-                borderSide:BorderSide(color: Colors.red)
-              ),
+              contentPadding: EdgeInsets.symmetric(vertical: 24, horizontal: 24),
+              border: OutlineInputBorder(),
               hintText: 'Enter city name',
               suffixIcon: Icon(Icons.search),
               label: Text("Search")
